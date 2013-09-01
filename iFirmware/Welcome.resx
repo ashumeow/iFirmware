@@ -224,4 +224,7 @@
         2XB3r9mvC9tBzedyVeLxNfa3tv8HxPx7LyUMv04AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="GetFirmwaresListAndDisplay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

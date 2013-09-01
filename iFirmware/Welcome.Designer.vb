@@ -28,6 +28,10 @@ Partial Class Welcome
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.GetFirmwaresListAndDisplay = New System.ComponentModel.BackgroundWorker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -73,7 +77,7 @@ Partial Class Welcome
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(225, 372)
+        Me.Button1.Location = New System.Drawing.Point(225, 314)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(114, 29)
         Me.Button1.TabIndex = 3
@@ -95,11 +99,45 @@ Partial Class Welcome
         Me.LabelX3.Text = "Copyright"
         Me.LabelX3.TextAlignment = System.Drawing.StringAlignment.Center
         '
-        'Form1
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(9, 416)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(122, 13)
+        Me.LinkLabel1.TabIndex = 5
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "More awesome software"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(225, 384)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(114, 29)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "&About"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(225, 349)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(114, 29)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "&Firmwares list"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'GetFirmwaresListAndDisplay
+        '
+        '
+        'Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 471)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.LabelX3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LabelX2)
@@ -107,11 +145,13 @@ Partial Class Welcome
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Welcome"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "iFirmware"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -119,5 +159,9 @@ Partial Class Welcome
     Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents GetFirmwaresListAndDisplay As System.ComponentModel.BackgroundWorker
 
 End Class

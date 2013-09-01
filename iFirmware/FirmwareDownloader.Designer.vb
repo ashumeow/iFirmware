@@ -135,6 +135,7 @@ Partial Class FirmwareDownloader
         Me.ProgressBar1.Location = New System.Drawing.Point(108, 321)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(356, 23)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar1.TabIndex = 9
         Me.ProgressBar1.Visible = False
         '

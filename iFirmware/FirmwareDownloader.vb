@@ -25,29 +25,40 @@ Public Class FirmwareDownloader
         If ComboBox1.Text = "Apple TV 2 (iOS 4.1) [8M89]" Then
             If File.Exists("C:\iFirmware\AppleTV2,1_4.1_8M89_Restore.ipsw") Then
                 FileChecksNotifier.Show()
+            Else
+                iFirmwareBGRunner.RunWorkerAsync()
             End If
         End If
 
         If ComboBox1.Text = "Apple TV 2 (iOS 4.2.1) [8C154]" Then
             If File.Exists("C:\iFirmware\AppleTV2,1_4.2.1_8C154_Restore.ipsw") Then
                 FileChecksNotifier.Show()
-            End If
+            Else
+                iFirmwareBGRunner.RunWorkerAsync()
 
+            End If
         End If
 
         If ComboBox1.Text = "Apple TV 2 (iOS 4.3) [8F191m]" Then
             If File.Exists("C:\iFirmware\AppleTV2,1_4.3_8F191m_Restore.ipsw") Then
                 FileChecksNotifier.Show()
+            Else
+                iFirmwareBGRunner.RunWorkerAsync()
+
             End If
         End If
 
         If ComboBox1.Text = "Apple TV 2 (iOS 5.1) [10A406e]" Then
             If File.Exists("C:\iFirmware\AppleTV2,1_5.1_10A406e_Restore.ipsw") Then
                 FileChecksNotifier.Show()
+            Else
+                iFirmwareBGRunner.RunWorkerAsync()
+
             End If
         End If
 
     End Sub
+
 
     Private Sub BackgroundWorker1_DoWork(ByVal sender As System.Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles iFirmwareBGRunner.DoWork
         ' The do nothing - thing
@@ -56,9 +67,6 @@ Public Class FirmwareDownloader
         If ComboBox1.Text = "" Then
         End If
         ' #####################
-
-
-
 
 
         ' ######### The download process ##########
@@ -113,4 +121,5 @@ Public Class FirmwareDownloader
             LabelX3.Text = ComboBox1.Text.ToString
         End If
     End Sub
+
 End Class
