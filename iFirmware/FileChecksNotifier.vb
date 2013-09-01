@@ -3,13 +3,13 @@ Public Class FileChecksNotifier
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         FirmwareDownloader.Text = "Select iOS - iFirmware"
-        FirmwareDownloader.LabelX1.Text = "Select iOS"
-        FirmwareDownloader.LabelX2.Text = "Select a specific iOS version you wish to download"
+        FirmwareDownloader.Label1.Text = "Select iOS"
+        FirmwareDownloader.Label2.Text = "Select a specific iOS version you wish to download"
         FirmwareDownloader.ComboBox1.Enabled = True
-        FirmwareDownloader.Button1.Enabled = True
-        FirmwareDownloader.Label1.Visible = False
+        FirmwareDownloader.DownloadButton.Enabled = True
+        FirmwareDownloader.ProgressLabel1.Visible = False
         FirmwareDownloader.ProgressBar1.Visible = False
-        FirmwareDownloader.Label1.Text = "Progress..."
+        FirmwareDownloader.ProgressLabel1.Text = "Progress..."
         Me.Close()
     End Sub
 
@@ -42,5 +42,9 @@ Public Class FileChecksNotifier
             FirmwareDownloader.iFirmwareBGRunner.RunWorkerAsync()
             Me.Close()
         End If
+    End Sub
+
+    Private Sub FileChecksNotifier_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

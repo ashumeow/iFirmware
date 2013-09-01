@@ -23,14 +23,14 @@ Partial Class FirmwareDownloader
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FirmwareDownloader))
-        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.Label2 = New DevComponents.DotNetBar.LabelX()
+        Me.Label1 = New DevComponents.DotNetBar.LabelX()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.SelectedFirmwareLabel1 = New DevComponents.DotNetBar.LabelX()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DownloadButton = New System.Windows.Forms.Button()
+        Me.ProgressLabel1 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.iFirmwareBGRunner = New System.ComponentModel.BackgroundWorker()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -38,34 +38,34 @@ Partial Class FirmwareDownloader
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'LabelX2
+        'Label2
         '
         '
         '
         '
-        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.LabelX2.Location = New System.Drawing.Point(98, 61)
-        Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(462, 37)
-        Me.LabelX2.TabIndex = 5
-        Me.LabelX2.Text = "Select a specific iOS version you wish to download"
-        Me.LabelX2.TextLineAlignment = System.Drawing.StringAlignment.Near
+        Me.Label2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label2.Location = New System.Drawing.Point(98, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(462, 37)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Select a specific iOS version you wish to download"
+        Me.Label2.TextLineAlignment = System.Drawing.StringAlignment.Near
         '
-        'LabelX1
-        '
-        '
+        'Label1
         '
         '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.LabelX1.Location = New System.Drawing.Point(98, 12)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(462, 54)
-        Me.LabelX1.TabIndex = 4
-        Me.LabelX1.Text = "Select iOS"
+        '
+        '
+        Me.Label1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(98, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(462, 54)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Select iOS"
         '
         'PictureBox1
         '
@@ -79,7 +79,7 @@ Partial Class FirmwareDownloader
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.LabelX3)
+        Me.GroupBox1.Controls.Add(Me.SelectedFirmwareLabel1)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(108, 176)
         Me.GroupBox1.Name = "GroupBox1"
@@ -88,19 +88,19 @@ Partial Class FirmwareDownloader
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Details"
         '
-        'LabelX3
+        'SelectedFirmwareLabel1
         '
         '
         '
         '
-        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX3.ForeColor = System.Drawing.Color.Black
-        Me.LabelX3.Location = New System.Drawing.Point(6, 12)
-        Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.Size = New System.Drawing.Size(344, 23)
-        Me.LabelX3.TabIndex = 11
-        Me.LabelX3.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.SelectedFirmwareLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.SelectedFirmwareLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SelectedFirmwareLabel1.ForeColor = System.Drawing.Color.Black
+        Me.SelectedFirmwareLabel1.Location = New System.Drawing.Point(6, 12)
+        Me.SelectedFirmwareLabel1.Name = "SelectedFirmwareLabel1"
+        Me.SelectedFirmwareLabel1.Size = New System.Drawing.Size(344, 23)
+        Me.SelectedFirmwareLabel1.TabIndex = 11
+        Me.SelectedFirmwareLabel1.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'ComboBox1
         '
@@ -111,24 +111,24 @@ Partial Class FirmwareDownloader
         Me.ComboBox1.Size = New System.Drawing.Size(344, 21)
         Me.ComboBox1.TabIndex = 0
         '
-        'Button1
+        'DownloadButton
         '
-        Me.Button1.Location = New System.Drawing.Point(348, 279)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(116, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "&Download"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DownloadButton.Location = New System.Drawing.Point(348, 279)
+        Me.DownloadButton.Name = "DownloadButton"
+        Me.DownloadButton.Size = New System.Drawing.Size(116, 23)
+        Me.DownloadButton.TabIndex = 7
+        Me.DownloadButton.Text = "&Download"
+        Me.DownloadButton.UseVisualStyleBackColor = True
         '
-        'Label1
+        'ProgressLabel1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 305)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Progress..."
-        Me.Label1.Visible = False
+        Me.ProgressLabel1.AutoSize = True
+        Me.ProgressLabel1.Location = New System.Drawing.Point(105, 305)
+        Me.ProgressLabel1.Name = "ProgressLabel1"
+        Me.ProgressLabel1.Size = New System.Drawing.Size(57, 13)
+        Me.ProgressLabel1.TabIndex = 8
+        Me.ProgressLabel1.Text = "Progress..."
+        Me.ProgressLabel1.Visible = False
         '
         'ProgressBar1
         '
@@ -159,11 +159,11 @@ Partial Class FirmwareDownloader
         Me.ClientSize = New System.Drawing.Size(572, 397)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ProgressLabel1)
+        Me.Controls.Add(Me.DownloadButton)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.LabelX2)
-        Me.Controls.Add(Me.LabelX1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -179,15 +179,15 @@ Partial Class FirmwareDownloader
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label2 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label1 As DevComponents.DotNetBar.LabelX
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DownloadButton As System.Windows.Forms.Button
+    Friend WithEvents ProgressLabel1 As System.Windows.Forms.Label
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents iFirmwareBGRunner As System.ComponentModel.BackgroundWorker
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents SelectedFirmwareLabel1 As DevComponents.DotNetBar.LabelX
 End Class
