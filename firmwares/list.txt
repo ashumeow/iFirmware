@@ -1,4 +1,8 @@
-List coming soon, I am getting it ready and prepared.
+Firmwares:
 
-Regards,
-Deavmi - iFirmware Founder.
+##### Apple TV 2 #####
+
+Apple TV 2 (iOS 4.1) [8M89]
+Apple TV 2 (iOS 4.2.1) [8C154]
+Apple TV 2 (iOS 4.3) [F191m]
+Apple TV 2 (iOS 5.1) [10A406e]
