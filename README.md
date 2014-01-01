@@ -8,3 +8,7 @@ browse for the .ipsw file located in C:\iFirmware\'firmwarename' and then double
 Please visit the iFimware website for more information: https://deavmi.github.io/iFirmware
 
 Please note on install time, iFirmware does require the dynamic link library "DevComponents.DotNetbar2.dll", so when you install iFirmware, this file will automatically be downloaded. But for developers, please use the ShitBrick-Tool to download this file with ease <http://bit.ly/shitbrick-utility>
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/deavmi/ifirmware/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
